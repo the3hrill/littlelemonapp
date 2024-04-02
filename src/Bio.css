@@ -1,0 +1,45 @@
+.bio-wrapper {
+  display: flex;
+}
+
+.biopicone {
+  height: 150px;
+  width: 150px;
+  position: relative;
+  top: 10px;
+  left: 0;
+  border-radius: 8px;
+}
+
+.biopictwo {
+  height: 150px;
+  width: 150px;
+  position: relative;
+  top: -20px;
+  right: 40px;
+  border-radius: 8px;
+}
+
+.bio-name {
+  color: #f4ce14;
+  font-family: Markazi;
+  font-weight: medium;
+  font-size: xx-large;
+}
+
+.bio-city {
+  font-family: Markazi;
+  font-weight: medium;
+  font-size: x-large;
+}
+
+.bio-pictures {
+  padding: 20px;
+  margin: 40px;
+}
+.bio-words {
+  font-family: karla;
+  font-size: small;
+  padding: 20px;
+  margin: 40px;
+}

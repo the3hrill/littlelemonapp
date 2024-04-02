@@ -1,0 +1,52 @@
+.testimonial-head {
+  background-color: #495e57;
+}
+.testimonial-container {
+  padding: 20px;
+  margin: 40px;
+}
+
+.testimonial-title {
+  font-family: Markazi;
+  font-weight: medium;
+  font-size: xx-large;
+}
+.face-picture {
+  width: 50px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+}
+.picandrating {
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+}
+header {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.customer-reviews {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 10px;
+}
+.review-wrapper {
+  display: inline-block;
+  padding: 5px;
+  background-color: white;
+  height: fit-content;
+  border-radius: 8px;
+  font-family: karla;
+  font-size: small;
+}
+
+.face-picture {
+  display: block;
+  margin-left: -5px;
+  margin-right: auto;
+}
+p {
+  margin: 0;
+}

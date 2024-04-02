@@ -1,0 +1,51 @@
+.main-heading {
+  background-color: #495e57;
+  padding: 10px;
+}
+
+.heading-container {
+  display: flex;
+  padding: 0px;
+  margin: 40px;
+}
+.one {
+  padding: 10px;
+}
+.foodone {
+  border-radius: 8px;
+  height: 150px;
+}
+
+.two {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-h1 {
+  color: #f4ce14;
+  font-family: markazi;
+  font: medium;
+  font-size: xx-large;
+}
+.header-h2 {
+  color: white;
+  font-family: markazi;
+  font-weight: medium;
+  font-size: x-large;
+}
+
+.header-p {
+  color: white;
+  font-family: karla;
+  font-size: small;
+  padding-bottom: 10px;
+}
+
+.reserve {
+  border-radius: 16px;
+  background-color: #f4ce14;
+  box-shadow: none;
+  border: 0;
+  font-family: karla;
+}

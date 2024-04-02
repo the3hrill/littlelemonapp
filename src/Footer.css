@@ -1,0 +1,39 @@
+.footerbody-wrapper {
+  background-color: #495e57;
+}
+.footerlogo {
+  background-color: white;
+  border-radius: 8px;
+}
+
+.footer-main {
+  display: flex;
+  padding: 20px;
+  margin: 40px;
+}
+.footpic {
+  justify-content: space-evenly;
+  padding-right: 20px;
+}
+.footer-links {
+  flex: 1;
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+}
+.links-name {
+  font-family: markazi;
+  font-size: large;
+  font-weight: medium;
+  white-space: nowrap;
+}
+.link-list {
+  font-family: karla;
+  font-size: small;
+}
+.links-container {
+  display: block;
+  justify-content: space-around;
+  padding-right: 10px;
+  padding-left: 10px;
+}
