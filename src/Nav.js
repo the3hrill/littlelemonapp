@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import navlogo from './assets/Logo.svg';
 import { GiHamburgerMenu } from 'react-icons/gi';
-import './Nav.css';
 import { VscChromeClose } from 'react-icons/vsc';
 import { Link } from 'react-router-dom';
-import './LogIn';
+import './Nav.css';
 
 function Nav() {
   const [click, setClick] = useState(false);
@@ -19,12 +18,20 @@ function Nav() {
           <li>
             <Link to="/">Home</Link>
           </li>
-          <li>About</li>
-          <li>Menu</li>
-          <li>Reservations</li>
-          <li>Order Online</li>
           <li>
-            <Link to="/LogIn">Login</Link>
+            <Link to="/About">About</Link>
+          </li>
+          <li>
+            <Link to="/Menu">Menu</Link>
+          </li>
+          <li>
+            <Link to="/Reservations">Reservations</Link>
+          </li>
+          <li>
+            <Link to="/Order">Order</Link>
+          </li>
+          <li>
+            <Link to="/LogIn">Log In</Link>
           </li>
         </ul>
         <div className="hamburger" onClick={handleClick}>

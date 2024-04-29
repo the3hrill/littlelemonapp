@@ -1,6 +1,7 @@
 import React from 'react';
 import './Header.css';
 import bruchetta from './assets/bruchetta.svg';
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
@@ -14,7 +15,9 @@ function Header() {
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
             Malesuada bibendum arcu vitae elementum curabitur vitae nunc sed.
           </p>
-          <button className="reserve">Reserve Now</button>
+          <Link to="/Reservations">
+            <button className="reserve">Reserve Now</button>
+          </Link>
         </section>
         <section className="two">
           <img src={bruchetta} alt="food" className="foodone" />
