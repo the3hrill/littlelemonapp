@@ -1,0 +1,39 @@
+.form-main {
+  display: grid;
+  place-items: center;
+  gap: 20px;
+}
+
+.form-res {
+  display: grid;
+  place-items: center;
+  gap: 20px;
+}
+
+.form-res input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #f4ce14;
+}
+
+.form-res select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #f4ce14;
+}
+
+.subbutton {
+  background-color: #f4ce14;
+  border-radius: 16px;
+  padding: 10px;
+  border: 0;
+  font-family: karla;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+label {
+  font-family: karla;
+}

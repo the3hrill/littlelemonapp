@@ -1,10 +1,8 @@
-import React from 'react';
-//import './Booking.js';
+/* import React from 'react';
+import './Booking.js';
 import { useState } from 'react';
 import './Reservations.css';
-import './SecondMain.js';
-import { Link } from 'react-router-dom';
-import './ConfirmedBooking.js';
+import './SecondMain.js'; */
 
 /* const Reservations = (props) => {
   const [date, setDate] = useState('');
@@ -75,32 +73,23 @@ import './ConfirmedBooking.js';
   );
 }; */
 
-const Reservations = () => {
+/* const Reservations = (props) => {
   const [date, setDate] = useState('');
   const [times, setTimes] = useState('');
   const [people, setPeople] = useState('1');
   const [occasion, setOccasion] = useState('');
-  /* 
-  const [availableTimes, setAvailableTimes] = useState([
-    '8:00',
-    '9:00',
-    '10:00',
-    '11:00',
-    '12:00',
-    '13:00',
-  ]); */
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    //props.SubmitForm(e);
+    props.SubmitForm(e);
   };
 
   const handleChange = (e) => {
-    setDate(e);
-    /* if (typeof props.dispatch === 'function') {
+    setDate(e); */
+/* if (typeof props.dispatch === 'function') {
       props.dispatch(e);
     } */
-    //props.dispatch(e.target.value);
+/*     props.dispatch(e.target.value);
   };
 
   return (
@@ -128,19 +117,21 @@ const Reservations = () => {
                 onChange={(e) => setTimes(e.target.value)}
                 required
               >
-                <option value="">Select a Time</option>
-                {/*                 <option>8.00</option>
+                <option value="">Select a Time</option> */
+{
+  /*                 <option>8.00</option>
                 <option>9.00</option>
                 <option>10.00</option>
                 <option>11.00</option>
                 <option>12.00</option>
-                <option>13.00</option> */}
-                {availableTimes.map((time, index) => (
+                <option>13.00</option> */
+}
+{
+  /* {props.availableTimes.map((time, index) => (
                   <option key={index}>{time}</option>
-                ))}
-                {/* {availableTimes.map((time) => (
-                  <option key={time}>{time}</option>
-                ))} */}
+                ))} */
+}
+/*              {(availabletimes) => <option key={index}>{time}</option>}
               </select>
             </div>
 
@@ -172,13 +163,7 @@ const Reservations = () => {
             </div>
 
             <div>
-              <Link to="/ConfirmedBooking">
-                <input
-                  type="submit"
-                  className="reservebutton"
-                  value="Reserve"
-                />
-              </Link>
+              <input type="submit" className="reservebutton" value="Reserve" />
             </div>
           </fieldset>
         </form>
@@ -187,4 +172,4 @@ const Reservations = () => {
   );
 };
 
-export default Reservations;
+export default Reservations; */

@@ -13,8 +13,10 @@ import SecondMain from './SecondMain.js'; */
 import Nav from './Nav.js';
 import { Routes, Route } from 'react-router-dom';
 import LogIn from './LogIn.js';
-import Reservations from './Reservations.js';
+//import Reservations from './Reservations.js';
 import Homepage from './Homepage.js';
+import BookingForm from './BookingForm.js';
+import ConfirmedBooking from './ConfirmedBooking.js';
 
 function App() {
   return (
@@ -24,7 +26,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/LogIn" element={<LogIn />} />
-          <Route path="/Reservations" element={<Reservations />} />
+          <Route path="/Reservations" element={<BookingForm />} />
+          <Route path="/ConfirmedBooking" element={<ConfirmedBooking />} />
         </Routes>
       </>
     </div>
