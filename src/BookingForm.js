@@ -185,7 +185,8 @@ export default BookingForm; */
 import React, { useState, useEffect } from 'react';
 import { fetchAPI, submitAPI } from './BookingApi';
 import './BookingForm.css';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const BookingForm = () => {
   const [name, setName] = useState('');
@@ -198,6 +199,8 @@ const BookingForm = () => {
   const [occasion, setOccasion] = useState('birthday');
   const [formData, setFormData] = useState(null);
 
+  const navigate = useNavigate();
+
   useEffect(() => {
     setTimes(fetchAPI(new Date(selectedDate)));
   }, [selectedDate]);
@@ -206,7 +209,8 @@ const BookingForm = () => {
     event.preventDefault();
     setFormData({ date: selectedDate, time: selectedTime });
     if (submitAPI(formData)) {
-      alert('Reservation submitted successfully!');
+      //alert('Reservation submitted successfully!');
+      navigate('/ConfirmedBooking');
     } else {
       alert('Failed to submit reservation.');
     }
@@ -278,11 +282,9 @@ const BookingForm = () => {
             </select>
           </div>
           <div>
-            <Link to="/ConfirmedBooking">
-              <button type="submit" className="subbutton">
-                Submit Reservation
-              </button>
-            </Link>
+            <button type="submit" className="subbutton">
+              Submit Reservation
+            </button>
           </div>
         </fieldset>
       </form>

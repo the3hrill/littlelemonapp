@@ -2,6 +2,7 @@
   list-style-type: none;
   display: flex;
   font-family: karla;
+  text-decoration: none;
 }
 li {
   margin: 10px;
@@ -29,6 +30,7 @@ li {
 
 .navbar .nav-menu {
   display: flex;
+  text-decoration: none;
 }
 .navbar li {
   padding: 1rem;
@@ -53,6 +55,7 @@ li {
     background: wheat 0.98;
     transition: 0.4s ease-in-out;
     z-index: 10;
+    text-decoration: none;
   }
   .navbar .active {
     right: 0;
@@ -60,4 +63,9 @@ li {
 }
 .icon {
   height: 1rem;
+}
+
+.links {
+  text-decoration: none;
+  color: #495e57;
 }

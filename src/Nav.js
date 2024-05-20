@@ -16,22 +16,34 @@ function Nav() {
         </span>
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/" className="links">
+              Home
+            </Link>
           </li>
           <li>
-            <Link to="/About">About</Link>
+            <Link to="/About" className="links">
+              About
+            </Link>
           </li>
           <li>
-            <Link to="/Menu">Menu</Link>
+            <Link to="/Menu" className="links">
+              Menu
+            </Link>
           </li>
           <li>
-            <Link to="/Reservations">Reservations</Link>
+            <Link to="/Reservations" className="links">
+              Reservations
+            </Link>
           </li>
           <li>
-            <Link to="/Order">Order</Link>
+            <Link to="/Order" className="links">
+              Order
+            </Link>
           </li>
           <li>
-            <Link to="/LogIn">Log In</Link>
+            <Link to="/LogIn" className="links">
+              Log In
+            </Link>
           </li>
         </ul>
         <div className="hamburger" onClick={handleClick}>
