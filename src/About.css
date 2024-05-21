@@ -1,0 +1,24 @@
+.restaurantpic {
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+}
+
+.aboutsec {
+  text-align: center;
+  padding: 10vh;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.abouttitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #f4ce14;
+  font-family: Markazi;
+}
+
+.aboutp {
+  font-size: 1.5rem;
+  font-family: karla;
+}

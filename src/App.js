@@ -17,6 +17,7 @@ import LogIn from './LogIn.js';
 import Homepage from './Homepage.js';
 import BookingForm from './BookingForm.js';
 import ConfirmedBooking from './ConfirmedBooking.js';
+import About from './About.js';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Nav />
         <Routes>
           <Route path="/" element={<Homepage />} />
+          <Route path="/About" element={<About />} />
           <Route path="/LogIn" element={<LogIn />} />
           <Route path="/Reservations" element={<BookingForm />} />
           <Route path="/ConfirmedBooking" element={<ConfirmedBooking />} />
