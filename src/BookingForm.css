@@ -32,6 +32,12 @@
   font-family: karla;
   margin-top: 20px;
   margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.subbutton:active {
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  background-color: #b39b0a;
 }
 
 label {
