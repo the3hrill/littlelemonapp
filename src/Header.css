@@ -48,4 +48,12 @@
   box-shadow: none;
   border: 0;
   font-family: karla;
+  transition: all 0.3s ease;
+  height: 25;
+}
+.reserve:hover {
+  background-color: #f4ce14;
+  font-style: bold;
+  box-shadow: black;
+  transform: translateY(-1px);
 }

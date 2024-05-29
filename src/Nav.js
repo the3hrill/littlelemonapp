@@ -8,6 +8,8 @@ import './Nav.css';
 function Nav() {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
+
   return (
     <nav className="navbar">
       <div className="container">
@@ -16,32 +18,36 @@ function Nav() {
         </span>
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
           <li>
-            <Link to="/" className="links">
+            <Link to="/" onClick={closeMobileMenu} className="links">
               Home
             </Link>
           </li>
           <li>
-            <Link to="/About" className="links">
+            <Link to="/About" onClick={closeMobileMenu} className="links">
               About
             </Link>
           </li>
           <li>
-            <Link to="/Menu" className="links">
+            <Link to="/Menu" onClick={closeMobileMenu} className="links">
               Menu
             </Link>
           </li>
           <li>
-            <Link to="/Reservations" className="links">
+            <Link
+              to="/Reservations"
+              onClick={closeMobileMenu}
+              className="links"
+            >
               Reservations
             </Link>
           </li>
           <li>
-            <Link to="/Order" className="links">
+            <Link to="/Order" onClick={closeMobileMenu} className="links">
               Order
             </Link>
           </li>
           <li>
-            <Link to="/LogIn" className="links">
+            <Link to="/LogIn" onClick={closeMobileMenu} className="links">
               Log In
             </Link>
           </li>

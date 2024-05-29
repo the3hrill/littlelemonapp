@@ -61,9 +61,17 @@
   background-color: #f4ce14;
   border-radius: 16px;
   border: none;
-  size: 1rem;
   font-family: karla;
+  height: 30px;
 }
+
+.button-menu:hover {
+  background-color: #f4ce14;
+  font-style: bold;
+  box-shadow: black;
+  transform: translateY(-1px);
+}
+
 .highlights-info {
   padding: 3px;
 }
